@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: #0C1821;
+    scroll-behavior: smooth;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    flex: 50%;
+}
+.sidebar{
+    margin-top: -25px;
+    /* margin-bottom: auto; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    background-color: #253237;
+    height: 90px;
+    max-width: 90%;
+    display: flex;
+    /* flex-direction: column; */
+    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+    position: fixed;
+    border: 2px solid #D64933;
+    border-radius: 0 0 60px 60px;
+}
+.JumpButtons{
+    width: 80px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 1em 2em;
+    margin-top: 2.5em;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #D64933;
+    background: #0C1821;
+    color:#9DB4C0;
+    cursor: pointer;
+    transition: 0.8s;
+    /* position: relative; */
+    /* overflow: hidden; */
+}
+.JumpButtons:hover{
+    transform: scale(120%) rotate3d(2, 0, 0, -360deg);
+    transition: 1s;
+}
+.content{
+    margin-top: 20%;
+    /* padding-top: 5% ; */
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    /* background-color: rgba(37, 50, 55, 0.8); */
+    /* border-radius: 0 0 15px 15px; */
+    text-align: left;
+}
+#about{
+    background-color: rgba(37, 50, 55, 0.8);
+    margin-left: -25%;
+    padding: 20px 20px 20px 10%;
+    border-radius: 0 60px 60px 0;
+    border: 2px solid #D64933;
+    /* max-height: 250px; */
+}
+#about h1{
+    font-size: 3em;
+    padding-bottom: .05em;
+    color: #F7B801;
+}
+/*                TESTING                */
+/* #about h1{
+    position: absolute;
+  top: 45%;
+  left: 35%;
+  transform: translate(-50%, -100%);
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+#about h1 span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color :#000;
+    transition: 0.5s;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    overflow: hidden;
+    color: #464f2b;
+}
+  
+#about h1:hover span:nth-child(1) {
+    transform: translateY(-12px);
+    color: #aa6882;
+}
+
+  
+#about h1 span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color :#000;
+    transition: 0.5s;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100% );
+    overflow: hidden;
+    color: #23322b;
+}
+#about h1:hover span:nth-child(2) {
+    transform: translateY(12px);
+    color: #2b1920;
+}
+  
+#about h1 span:nth-child(3) {
+    position: absolute;
+    top: 50%; left: 0; transform: translateY(-50%) scaleY(0);
+    width: 103%;
+    color:#000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.6rem;
+    box-sizing: border-box;
+    padding-left: 5px;
+    text-align: center;
+    transition: 0.5s;
+    color: #23322b;
+}
+#about h1:hover span:nth-child(3) {
+      transform: translateY(-50%) scaleY(1);
+      color: #643247;
+} */
+
+/*                TESTING                */
+
+#about h2{
+    font-size: 1.8em;
+    color: #D64933;
+}
+#about p{
+    color: #9DB4C0;
+    font-size: 1.3em;
+    text-align:left;
+}
+#skills{
+    margin-top: 20%;
+    background-color: rgba(37, 50, 55, 0.8);
+    border: 2px solid #D64933;
+    border-radius: 10px 60px 10px 60px;
+    text-align: center;
+}
+#skills h2{
+    font-size: 2em;
+    color: #D64933;
+    padding-top: 20px;
+}
+#skill-container{
+    width: auto;
+}
+.skill-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.skill-row img{
+    width: auto;
+    height: 100px;
+    padding: 20px 20px 20px 20px;
+}
+.skill-row img:hover{
+    transform: scale(120%);
+    transition: 1s;
+}
+/* #skill-jump-point{
+    border: 2px solid #D64933;
+} */
+.project-row img{
+    height: 250px;
+    width: auto;
+}
+@media screen and (max-width: 1000px){
+    /* .sidebar{
+        display: none;
+    } */
+    .JumpButtons{
+        width: 65px;
+        margin: 1em 1em;
+        margin-top: 2.5em;
+    }
+    .JumpButtons:hover{
+        transform: scale(110%) rotate3d(2, 0, 0, -360deg);
+        transition: 1s;
+    }
+    .content{
+        align-items: center;
+        margin-top: 25%;
+    }
+    #about h1{
+        font-size: 2em;
+    }
+    #about h2{
+        font-size: 1em;
+    }
+    #about p{
+        font-size: 0.8em;
+    }
+}
