@@ -114,6 +114,7 @@ html{
     justify-content: space-evenly;
     position: relative;
     min-width: 112.5%;
+    /* transition: 0.5s; */
 
     /* TAKE BACKGROUND AND SIZING FROM SKILL-ROWS AND APPLY HERE TO ALLOW SEAMLESS ALIGNMENT OF ICONS WHILE MAINTAINING AESTHETIC */
 }
@@ -233,16 +234,6 @@ html{
     left: 22%;
     width: 80%;
 }
-#Math button{
-    display: none;
-    cursor: pointer;
-    position: relative;
-    top: -45%;
-    left: 12%;
-}
-#Math button:hover{
-    display: block;
-}
 /* PROJECTS SECTION ENDS */
 
 /* CONTACT SECTION BEGINS */
@@ -307,6 +298,7 @@ html{
         width: auto;
         height: 50px;
         padding: 20px 20px 0 20px;
+        transition: 0.5s;
     }
     #skill-row-2 span{
         transform: translateX(0);
