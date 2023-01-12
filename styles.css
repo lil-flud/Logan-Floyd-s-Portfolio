@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* border: 1px dashed white; */
+    /* outline: 1px dashed white; */
 }
 html{
     background-color: #0C1821;
@@ -28,6 +28,7 @@ html{
     position: fixed;
     border: 2px solid #D64933;
     border-radius: 0 0 60px 60px;
+    z-index: 1;
 }
 .JumpButtons{
     width: 80px;
@@ -46,16 +47,7 @@ html{
     /* position: relative;
     overflow: hidden; */
 }
-/* .JumpButtons span{
-    background: rgba(209, 141, 6, 0.676);
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-} */
+
 .JumpButtons:hover{
     transform: scale(120%) rotate3d(2, 0, 0, -360deg);
     transition: 1s;
@@ -65,7 +57,7 @@ html{
     margin-top: 2.5em;
 }
 .content{
-    margin-top: 18%;
+    margin-top: 15%;
     /* padding-top: 5% ; */
     display: flex;
     flex-direction: column;
@@ -103,7 +95,7 @@ html{
 
 /* SKILLS SECTION BEGINS */
 #skills{
-    margin-top: 20%;
+    margin-top: 10%;
     /* background-color: rgba(37, 50, 55, 0.8);
     border: 2px solid #D64933;
     border-radius: 10px 60px 10px 60px; */
@@ -120,6 +112,8 @@ html{
 .skill-row{
     display: flex;
     justify-content: space-evenly;
+    position: relative;
+    min-width: 112.5%;
 
     /* TAKE BACKGROUND AND SIZING FROM SKILL-ROWS AND APPLY HERE TO ALLOW SEAMLESS ALIGNMENT OF ICONS WHILE MAINTAINING AESTHETIC */
 }
@@ -140,28 +134,30 @@ html{
     border: 2px solid #D64933;
     border-radius: 0 60px 60px 0;
     padding: 20px 20px 20px 10%;
-    margin-left: -25%;
+    left: -25%;
     margin-bottom: 5%;
 }
 #skill-row-2{
     background-color: rgba(37, 50, 55, 0.8);
-    border: 2px solid #D64933;
+    /* border: 2px solid #D64933; */
     border-radius: 60px 0 0 60px;
-    padding: 20px 20px 20px 10%;
-    margin-right: -28%;
+    border-top: 2px solid #D64933;
+    border-left: 2px solid #D64933;
+    border-bottom: 2px solid #D64933;
+    padding: 20px 20px 20px 6.7%;
+    right: 0%;
     margin-bottom: 5%;
-    /* transform: translateX(-5%); */
 }
 #skill-row-3{
     background-color: rgba(37, 50, 55, 0.8);
     border: 2px solid #D64933;
     border-radius: 0 60px 60px 0;
     padding: 20px 20px 20px 10%;
-    margin-left: -25%;
+    left: -25%;
     margin-bottom: 5%;
 }
 #skill-row-2 span{
-    transform: translateX(-83%);
+    transform: translateX(-30%);
 }
 
 /* ALTERNATE VERSION OF SKILLS DISPLAY */
@@ -194,21 +190,74 @@ html{
 /* SKILLS SECTION ENDS */
 
 /* PROJECTS SECTION BEGINS */
-#projects{
-    margin-top: 20%;
-    background-color: rgba(37, 50, 55, 0.8);
-    border: 2px solid #D64933;
-    border-radius: 0 60px 60px 0;
-    padding: 20px 0px 20px 20%;
-    margin-left: -25%;
+.project-row{
+    /* outline: 1px solid white; */
+    margin-top: 10%;
+    display: flex;
     max-width: 100%;
+    /* justify-content: space-between; */
+    
 }
 .project-row img{
     height: 250px;
     width: auto;
 }
+#BLAP{
+    position: relative;
+    left: -21.5%;
+    background-color: rgba(37, 50, 55, 0.8);
+    /* border: 2px solid #D64933; */
+    border-top: 2px solid #D64933;
+    border-right: 2px solid #D64933;
+    border-bottom: 2px solid #D64933;
+    border-radius: 0 60px 60px 0;
+    padding: 20px 0px 20px 20%;
+}
+#BLAP img{
+    transform: translateX(-15%);
+}
+#Math{
+    position: relative;
+    right: 5%;
+    background-color: rgba(37, 50, 55, 0.8);
+    
+    border-top: 2px solid #D64933;
+    border-left: 2px solid #D64933;
+    border-bottom: 2px solid #D64933;
+    border-radius: 60px 0 0 60px;
+    padding: 20px 17.9% 20px 0px;
+}
+#Math img{
+    transform: translateX(15%);
+}
 /* PROJECTS SECTION ENDS */
-@media screen and (max-width: 1000px){
+
+/* CONTACT SECTION BEGINS */
+#contact-container{
+    display: flex;
+    background-color: #253237;
+    height: 12%;
+    max-width: 90%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 15%;
+    border-top: 2px solid #D64933;
+    border-right: 2px solid #D64933;
+    border-left: 2px solid #D64933;
+    border-radius: 60px 60px 0 0;
+    flex-direction: column;
+}
+#contact-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+#contact a, img{
+    width: 80px;
+    height: auto;
+}
+/* CONTACT SECTIONS ENDS */
+@media screen and (max-width: 1400px){
     /* .sidebar{
         display: none;
     } */
@@ -218,11 +267,11 @@ html{
         /* margin-top: 2.5em; */
     }
     .JumpButtons:hover{
-        transform: scale(110%) rotate3d(2, 0, 0, -360deg);
+        transform: scale(110%);
         transition: 1s;
     }
     .content{
-        align-items: center;
+        /* align-items: center; */
         margin-top: 25%;
     }
     #about h1{
@@ -233,5 +282,24 @@ html{
     }
     #about p{
         font-size: 0.8em;
+    }
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width: 600px){
+    .sidebar{
+        display: none;
+    }
+    .skill-row img{
+        width: auto;
+        height: 50px;
+        padding: 20px 20px 0 20px;
+    }
+    #skill-row-2 span{
+        transform: translateX(0);
+    }
+    .project-row img{
+        height: 50px;
+        width: auto;
     }
 }
