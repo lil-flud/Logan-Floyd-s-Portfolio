@@ -125,7 +125,7 @@ html{
     height: 100px;
     padding: 20px 20px 0 20px;
 }
-.skill-row img:hover{
+.skill-row span:hover{
     transform: scale(120%);
     transition: 1s;
 }
@@ -145,8 +145,16 @@ html{
     border-left: 2px solid #D64933;
     border-bottom: 2px solid #D64933;
     padding: 20px 20px 20px 6.7%;
-    right: 0%;
+    /* right: 4%; */
     margin-bottom: 5%;
+    /* width: 115%; */
+}
+#skill-row-2 span{
+
+}
+#skill-row-2 span:hover{
+    transform: scale(120%);
+    transition: 1s;
 }
 #skill-row-3{
     background-color: rgba(37, 50, 55, 0.8);
@@ -156,55 +164,38 @@ html{
     left: -25%;
     margin-bottom: 5%;
 }
-#skill-row-2 span{
+/* #skill-row-2 span{
     transform: translateX(-30%);
-}
-
-/* ALTERNATE VERSION OF SKILLS DISPLAY */
-/* #skill-row-1{
-    background-color: rgba(37, 50, 55, 0.8);
-    border: 2px solid #D64933;
-    border-radius: 60px 0 0 60px;
-    padding: 20px 20px 20px 10%;
-    margin-right: -28%;
-    margin-bottom: 5%;
-}
-#skill-row-2{
-    background-color: rgba(37, 50, 55, 0.8);
-    border: 2px solid #D64933;
-    border-radius: 0 60px 60px 0;
-    padding: 20px 20px 20px 10%;
-    margin-left: -25%;
-    margin-bottom: 5%;
-    
-}
-#skill-row-3{
-    background-color: rgba(37, 50, 55, 0.8);
-    border: 2px solid #D64933;
-    border-radius: 60px 0 0 60px;
-    padding: 20px 20px 20px 10%;
-    margin-right: -28%;
-    margin-bottom: 5%;
 } */
-/* ALTERNATE VERSION OF SKILLS DISPLAY */
+
 /* SKILLS SECTION ENDS */
 
 /* PROJECTS SECTION BEGINS */
+#projects{
+    width: auto;
+}
 .project-row{
     /* outline: 1px solid white; */
     margin-top: 10%;
     display: flex;
     max-width: 100%;
     /* justify-content: space-between; */
+    text-align: center;
+    flex: 20%;
     
 }
 .project-row img{
-    height: 250px;
-    width: auto;
+    height: 80%;
+    width: 80%;
+}
+.project-row h3{
+    padding-top: 1%;
+    color: #9DB4C0;
+    font-size: 1.5em;
 }
 #BLAP{
     position: relative;
-    left: -21.5%;
+    left: -25.5%;
     background-color: rgba(37, 50, 55, 0.8);
     /* border: 2px solid #D64933; */
     border-top: 2px solid #D64933;
@@ -212,23 +203,45 @@ html{
     border-bottom: 2px solid #D64933;
     border-radius: 0 60px 60px 0;
     padding: 20px 0px 20px 20%;
+    min-width: 50%;
+
 }
 #BLAP img{
     transform: translateX(-15%);
 }
+#BLAP h3{
+    position: relative;
+    width: 70%;
+    left: 3%;
+}
 #Math{
     position: relative;
-    right: 5%;
+    right: 12%;
     background-color: rgba(37, 50, 55, 0.8);
-    
     border-top: 2px solid #D64933;
     border-left: 2px solid #D64933;
     border-bottom: 2px solid #D64933;
     border-radius: 60px 0 0 60px;
-    padding: 20px 17.9% 20px 0px;
+    padding: 20px 13% 20px 0px;
+    min-width: 50%;
 }
 #Math img{
     transform: translateX(15%);
+}
+#Math h3{
+    position: relative;
+    left: 22%;
+    width: 80%;
+}
+#Math button{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    top: -45%;
+    left: 12%;
+}
+#Math button:hover{
+    display: block;
 }
 /* PROJECTS SECTION ENDS */
 
