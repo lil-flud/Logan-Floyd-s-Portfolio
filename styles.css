@@ -3,6 +3,10 @@
     padding: 0;
     /* outline: 1px dashed white; */
 }
+@font-face {
+    font-family: LeagueSpartan;
+    src:url(LeagueSpartan-Bold.otf)
+}
 html{
     background-color: #0C1821;
     scroll-behavior: smooth;
@@ -78,12 +82,14 @@ html{
     /* max-height: 250px; */
 }
 #about h1{
-    font-size: 3em;
+    font-family: Script MT, Brush Script Std, cursive;
+    font-size: 5em;
     padding-bottom: .05em;
     color: #F7B801;
 }
 
 #about h2{
+    font-family: LeagueSpartan;
     font-size: 1.8em;
     color: #D64933;
 }
@@ -91,6 +97,7 @@ html{
     color: #9DB4C0;
     font-size: 1.3em;
     text-align:left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* SKILLS SECTION BEGINS */
@@ -102,6 +109,7 @@ html{
     text-align: center;
 }
 #skills h2{
+    font-family: LeagueSpartan;
     font-size: 2em;
     color: #D64933;
     padding-top: 20px;
@@ -119,6 +127,7 @@ html{
     /* TAKE BACKGROUND AND SIZING FROM SKILL-ROWS AND APPLY HERE TO ALLOW SEAMLESS ALIGNMENT OF ICONS WHILE MAINTAINING AESTHETIC */
 }
 .skill-row h3{
+    font-family: LeagueSpartan;
     color: #9DB4C0;
 }
 .skill-row img{
@@ -150,9 +159,7 @@ html{
     margin-bottom: 5%;
     /* width: 115%; */
 }
-#skill-row-2 span{
 
-}
 #skill-row-2 span:hover{
     transform: scale(120%);
     transition: 1s;
@@ -174,15 +181,22 @@ html{
 /* PROJECTS SECTION BEGINS */
 #projects{
     width: auto;
+    text-align: center;
+    margin-top: 10%;
+}
+#projects h2{
+    font-family: LeagueSpartan;
+    font-size: 2em;
+    color: #D64933;
+    padding-bottom: 5%;
 }
 .project-row{
     /* outline: 1px solid white; */
-    margin-top: 10%;
     display: flex;
     max-width: 100%;
     /* justify-content: space-between; */
     text-align: center;
-    flex: 20%;
+    flex: 15%;
     
 }
 .project-row img{
@@ -226,6 +240,12 @@ html{
     padding: 20px 13% 20px 0px;
     min-width: 50%;
 }
+#Math:hover{
+    transform: scale(120%);
+}
+#BLAP:hover{
+    transform: scale(120%);
+}
 #Math img{
     transform: translateX(15%);
 }
@@ -234,6 +254,7 @@ html{
     left: 22%;
     width: 80%;
 }
+
 /* PROJECTS SECTION ENDS */
 
 /* CONTACT SECTION BEGINS */
@@ -251,6 +272,8 @@ html{
     border-left: 2px solid #D64933;
     border-radius: 60px 60px 0 0;
     flex-direction: column;
+    position: relative;
+    left: 5%;
 }
 #contact-row{
     display: flex;
@@ -287,6 +310,9 @@ html{
     #about p{
         font-size: 0.8em;
     }
+    .project-row h3{
+        font-size: 1.1em;
+    }
 }
 
 /* SMALL SCREENS */
@@ -303,8 +329,11 @@ html{
     #skill-row-2 span{
         transform: translateX(0);
     }
-    .project-row img{
+    /* .project-row img{
         height: 50px;
         width: auto;
+    } */
+    .project-row h3{
+        font-size: .8em;
     }
 }
