@@ -7,6 +7,10 @@
     font-family: LeagueSpartan;
     src:url(LeagueSpartan-Bold.otf)
 }
+@font-face {
+    font-family: BrushScript;
+    src:url(BRUSHSCI.TTF)
+}
 html{
     background-color: #0C1821;
     scroll-behavior: smooth;
@@ -83,7 +87,7 @@ html{
     /* max-height: 250px; */
 }
 #about h1{
-    font-family: Script MT, Brush Script Std, cursive;
+    font-family: Script MT, BrushScript, cursive;
     font-size: 5em;
     padding-bottom: .05em;
     color: #F7B801;
