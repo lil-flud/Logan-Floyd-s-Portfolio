@@ -319,9 +319,11 @@ html{
     color:#9DB4C0;
 } */
 /* CONTACT SECTIONS ENDS */
-@media screen and (max-width: 2000px){
-
+/* @media screen and (max-width: 2000px){
+#skill-row-2{
+    
 }
+} */
 @media screen and (max-width: 1400px){
     /* .sidebar{
         display: none;
@@ -400,5 +402,26 @@ html{
     }
     #Math{
         padding: 20px 17.74% 20px 0px;
+    }
+    #projects h2, #contact-header, #skills h2{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 400px){
+    #skill-row-2{
+        padding: 20px 20px 20px 1%;
+        right: 1.99%;
+    }
+    #Math{
+        padding: 20px 11.4% 20px 0px;
+    }
+    .skill-row img{
+        height: 30px;
+    }
+    .project-row h3{
+        font-size: .65em;
+    }
+    #email{
+        font-size: 0.5em;
     }
 }
