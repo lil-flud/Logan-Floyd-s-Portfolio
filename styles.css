@@ -73,7 +73,7 @@ html{
     max-width: 70%;
     /* background-color: rgba(37, 50, 55, 0.8); */
     /* border-radius: 0 0 15px 15px; */
-    text-align: left;
+    text-align: center;
 }
 #about{
     position: relative;
@@ -85,6 +85,7 @@ html{
     border-radius: 0 60px 60px 0;
     border: 2px solid #D64933;
     /* max-height: 250px; */
+    text-align: left;
 }
 #about h1{
     font-family: Script MT, BrushScript, cursive;
@@ -247,6 +248,7 @@ html{
 }
 #Math:hover{
     transform: scale(120%);
+    padding: 20px 7.3% 20px 0px;
 }
 #BLAP:hover{
     transform: scale(120%);
@@ -263,6 +265,13 @@ html{
 /* PROJECTS SECTION ENDS */
 
 /* CONTACT SECTION BEGINS */
+#contact-header{
+    margin-top: 15%;
+    padding-bottom: 5%;
+    font-family: LeagueSpartan;
+    font-size: 2em;
+    color: #D64933;
+}
 #contact-container{
     display: flex;
     background-color: #253237;
@@ -271,7 +280,7 @@ html{
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-    margin-top: 15%;
+    /* margin-top: 15%; */
     border-top: 2px solid #D64933;
     border-right: 2px solid #D64933;
     border-left: 2px solid #D64933;
@@ -284,11 +293,35 @@ html{
     display: flex;
     justify-content: space-evenly;
 }
+
 #contact a, img{
     width: 80px;
     height: auto;
 }
+#phone-email{
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#phone, #email{
+    position: relative;
+    left: 8%;
+    color: #D64933;
+}
+#phone span, #email span{
+    color:#9DB4C0;
+}
+/* #phone{
+    color: #D64933;
+}
+#phone span{
+    color:#9DB4C0;
+} */
 /* CONTACT SECTIONS ENDS */
+@media screen and (max-width: 2000px){
+
+}
 @media screen and (max-width: 1400px){
     /* .sidebar{
         display: none;
@@ -318,10 +351,22 @@ html{
     .project-row h3{
         font-size: 1.1em;
     }
+    #Math{
+        padding: 20px 13.8% 20px 0px;
+    }
+    #phone, #email{
+        /* flex-direction: column; */
+        font-size: 1.5em;
+        left: 0%;
+    }
+    #phone-email{
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 /* SMALL SCREENS */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     .sidebar{
         display: none;
     }
@@ -340,5 +385,20 @@ html{
     } */
     .project-row h3{
         font-size: .8em;
+    }
+    #contact-row img{
+        width: 60px;
+        transition-duration: 1s;
+    }
+    #phone-email{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #phone, #email{
+        font-size: 0.6em;
+        left: 0%;
+    }
+    #Math{
+        padding: 20px 17.74% 20px 0px;
     }
 }
