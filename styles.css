@@ -203,6 +203,7 @@ html{
     /* justify-content: space-between; */
     text-align: center;
     flex: 15%;
+    padding-bottom: 4%;
     
 }
 .project-row img{
@@ -262,6 +263,84 @@ html{
     width: 80%;
 }
 
+#inventory-tracker {
+    position: relative;
+    /* left: -25.5%; */
+    background-color: rgba(37, 50, 55, 0.8);
+    /* border: 2px solid #D64933; */
+    border-top: 2px solid #D64933;
+    border-right: 2px solid #D64933;
+    border-bottom: 2px solid #D64933;
+    border-left: 2px solid #D64933;
+    border-radius: 60px 60px 60px 60px;
+    padding: 20px 0px 20px 20%;
+    min-width: 50%;
+}
+
+#inventory-tracker img {
+    transform: translateX(-15%);
+}
+#inventory-tracker h3 {
+    position: relative;
+    width: 70%;
+    left: 3%;
+}
+
+#inventory-tracker:hover {
+    transform: scale(120%);
+}
+.carousel {
+    width: 100%;
+}
+
+.slide {
+    display: none;
+    opacity: 0;
+}
+
+.slide[data-active] {
+    display: block;
+    opacity: 1;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 40%;
+    color: rgba(214, 73, 51, .5);
+    cursor: pointer;
+    border-radius: 20%;
+    padding: 0 .5rem;
+    background-color: rgba(157, 180, 192, .1);
+    /* transform: translateY(-40%); */
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: #F7B801;
+    background-color: rgba(157, 180, 192, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid #F7B801;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+.carousel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 /* PROJECTS SECTION ENDS */
 
 /* CONTACT SECTION BEGINS */
@@ -312,13 +391,10 @@ html{
 #phone span, #email span{
     color:#9DB4C0;
 }
-/* #phone{
-    color: #D64933;
-}
-#phone span{
-    color:#9DB4C0;
-} */
+
 /* CONTACT SECTIONS ENDS */
+
+
 @media screen and (max-width: 2600px){
     .skill-row img{
         height: 150px;
@@ -326,6 +402,25 @@ html{
     #projects h2, #contact-header, #skills h2{
         font-size: 4em;
     }
+
+    .carousel-button {
+        font-size: 6rem;
+    }
+
+    /* .carousel-button {
+        position: absolute;
+        z-index: 2;
+        background: none;
+        border: none;
+        font-size: 4rem;
+        top: 40%;
+        color: rgba(214, 73, 51, .5);
+        cursor: pointer;
+        border-radius: 20%;
+        padding: 0 .5rem;
+        background-color: rgba(157, 180, 192, .1);
+        transform: translateY(-40%);
+    } */
 }
 
 @media screen and (max-width: 1400px){
@@ -410,6 +505,34 @@ html{
     #projects h2, #contact-header, #skills h2{
         font-size: 1.5em;
     }
+    
+    .carousel-button {
+        font-size: 1.5rem;
+        top: 50%;
+        transform: translateY(-40%);
+    }
+
+    .carousel-button.prev {
+        left: .5rem;
+    }
+    
+    .carousel-button.next {
+        right: .5rem;
+    }
+    /* .carousel-button {
+        position: absolute;
+        z-index: 2;
+        background: none;
+        border: none;
+        font-size: 4rem;
+        top: 40%;
+        color: rgba(214, 73, 51, .5);
+        cursor: pointer;
+        border-radius: 20%;
+        padding: 0 .5rem;
+        background-color: rgba(157, 180, 192, .1); */
+        /* transform: translateY(-40%); */
+    /* } */
 }
 @media screen and (max-width: 400px){
     #skill-row-2{
