@@ -464,6 +464,10 @@ html{
         flex-direction: column;
         justify-content: center;
     }
+
+    .carousel-button {
+        font-size: 4rem;
+    }
 }
 
 /* SMALL SCREENS */
@@ -507,7 +511,7 @@ html{
     }
     
     .carousel-button {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
         top: 50%;
         transform: translateY(-40%);
     }
@@ -519,20 +523,7 @@ html{
     .carousel-button.next {
         right: .5rem;
     }
-    /* .carousel-button {
-        position: absolute;
-        z-index: 2;
-        background: none;
-        border: none;
-        font-size: 4rem;
-        top: 40%;
-        color: rgba(214, 73, 51, .5);
-        cursor: pointer;
-        border-radius: 20%;
-        padding: 0 .5rem;
-        background-color: rgba(157, 180, 192, .1); */
-        /* transform: translateY(-40%); */
-    /* } */
+
 }
 @media screen and (max-width: 400px){
     #skill-row-2{
